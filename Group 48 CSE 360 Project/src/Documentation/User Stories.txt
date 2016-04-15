@@ -2,9 +2,9 @@ CSE 360 User Stories
 
 As a player, I want to access the interface so that I can actually play the game.
 
-As a player, I want to see how many points I have so that I can see how I’m doing.
+As a player, I want to see how many points I have so that I can see how Iâ€™m doing.
 
-As a player, I want to see how many points the other players have so that I know how I’m doing relative to everyone else.
+As a player, I want to see how many points the other players have so that I know how Iâ€™m doing relative to everyone else.
 
 As a player, I want to roll the dice so that I can (hopefully) score points.
 
@@ -15,3 +15,10 @@ As a player, I want to score my points so that I can add the points to my total.
 As a player, I want to see the scoring rules so that I know what dice combinations are worth the most points.
 
 As a player, I want to start a game so that I can actually play the game.
+
+As a system database, I want to manage the score system so that so that the players have no issues playing.
+
+As a system database, I want to have a win/lose condition 
+
+As a system database, I want to have a method of viewing the leaderboards
+
