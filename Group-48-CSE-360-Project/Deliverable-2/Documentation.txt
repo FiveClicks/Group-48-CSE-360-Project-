@@ -1,0 +1,6 @@
+Group 48 Log
+
+4/13 - David Hjelmstad informed us he was no longer enrolled in the class and would be leaving our group. 
+	Given the integral nature of the code David was working on for deliverable 2, we will not have a complete 
+	deliverable to turn in on 4/15. As discussed with Dr. Calliss after class on 4/15, we will be submitting 
+	what we have so far anyways for code and updated documentation.
