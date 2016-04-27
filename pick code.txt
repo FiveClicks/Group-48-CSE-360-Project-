@@ -1,0 +1,92 @@
+
+
+int selected[] = new int[6];
+
+int unselected[] = new int[6];
+
+int default[] = new int[6];
+
+// blah blah dice generation d1 d2 d3 d4 d5 d6
+
+default[0] = d1;
+default[1] = d2;
+default[2] = d3;
+default[3] = d4;
+default[4] = d5;
+default[5] = d6;
+
+public void roll6()
+{
+	print("The following die were rolled\n");
+	for(int i=0; i <= default.length; i++)
+	{
+		print(default[i] + "\n");
+		
+	}
+
+
+}
+
+public void pick()
+{
+	print("Please choose the die from numbers 1-6 that you want to set aside. When finished picking, enter 7");
+	int input;
+	while(input!=7)
+	{
+		int count = 0;
+`		scanf(input);
+		if(input == 1)
+		{
+			selected(count) = default[0];	
+			count++;
+		}
+		else if(input == 2)
+		{
+			selected(count) = default[1];
+			count++;
+		}
+		
+		else if(input == 3)
+		{
+			selected(count) = default[2];
+			count++;
+		}		
+		else if(input == 4)
+		{
+			selected(count) = default[3];
+			count++;
+		}
+		else if(input == 5)
+		{
+			selected(count) = default[4];
+			count++;
+		}
+		else if(input == 6)
+		{
+			selected(count) = default[5];
+			count++;
+		}
+		else
+		{
+			return " ";
+		}
+
+			
+	
+}
+
+
+main()
+{
+	roll6();
+
+	pick();
+
+
+
+
+
+
+
+}
+
