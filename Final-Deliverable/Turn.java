@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Turn {
 
@@ -44,9 +45,6 @@ public class Turn {
 		System.out.println("Die 5: " + d5.getValue());
 		System.out.println("Die 6: " + d6.getValue());
 		
-		selectDie();
-		//Prompt user for next action
-		nextAction();
 	}	
 	
 	public void selectDie() {
@@ -61,6 +59,46 @@ public class Turn {
 				
 		}
 	}
+	
+	public ArrayList<Die> findPointDice() {
+		
+		ArrayList<Die> pointDice = new ArrayList<Die>();
+		
+		for (int numDie = 0; numDie < 6; numDie++) {
+			if (dieList[numDie].getSelected())
+				pointDice.add(dieList[numDie]);
+		}
+		
+		pointDice.sort(Die.getValue);
+		return pointDice;
+	}
+	
+	// Determine the points earned for an array of rolled selected dice to be scored.
+		public void scorePoints(ArrayList<Die> pointDice){
+			rollPoints = 0;
+			
+			// 1 rolled die is selected to be scored
+			if (pointDice.size() == 1) {
+				if (pointDice.get(0).getValue() == 1)
+					rollPoints = rollPoints + 100;
+				else if (pointDice.get(0).getValue() == 5)
+					rollPoints = rollPoints + 50;
+			}
+			
+			// 2 rolled dice were selected to be scored
+			if (pointDice.size() == 2) {
+				for (int aryPosition = 0; aryPosition < pointDice.size; aryPosition++) {
+					if (pointDice.get(aryPosition).getValue() == 1)
+						rollPoints = rollPoints + 100;
+					else if (pointDice.get(aryPosition).getValue() == 5)
+						rollPoints = rollPoints + 50;
+				}
+			}
+			// 3 rolled dice were selected to be scored
+			// 4 rolled dice were selected to be scored
+			// 5 rolled dice were selected to be scored
+			// 6 rolled dice were selected to be scored
+		}
 	
 	public void nextAction() {
 		String userInput = "";
