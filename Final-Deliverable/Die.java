@@ -49,6 +49,15 @@ public class Die {
 		selected = trueOrFalse;
 	}
 	
+	public void setScored(boolean trueOrFalse) {
+		scored = trueOrFalse;
+	}
+	
+	// Set value of die for testing purposes
+	public void setValue(int dieVal)
+	{
+		value = dieVal;
+	}
 	
 	/**
 	 * Getter for the die value
