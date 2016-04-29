@@ -1,3 +1,12 @@
+package finaldeliverable; // remove this when you put into your file, or change to your package name
+
+/*
+ * @Author: Ryan Ditsworth, Jeremy St. Ange
+ * @Version1: 4/14/16
+ * 
+ * Class Description:This is a JUnit class that tests Game.
+ */
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -303,5 +312,72 @@ public class GameTest {
 		assertEquals(0, points);
 	}
 	
+	@Test
+	// test if points are not null for one die
+	public void testScorePoints14()
+	{
+		Game game = new Game();
+		ArrayList <Die> die = new ArrayList<Die>();
+		Die die1 = new Die();
+		
+		die1.setValue(1);
+		die.add(die1);
+		
+		game.scorePoints(die);
+		int points = game.rollPoints;
+		assertNotNull(points);
+		
+	}
+	
+	@Test
+	// test if points are not null for two die
+	public void testScorePoints15()
+	{
+		Game game = new Game();
+		ArrayList <Die> die = new ArrayList<Die>();
+		Die die1 = new Die();
+		Die die2 = new Die();
+		die1.setValue(1);
+		die2.setValue(2);
+		die.add(die1);
+		die.add(die2);
+		game.scorePoints(die);
+		int points = game.rollPoints;
+		assertNotNull(points);
+		
+	}
+
+	@Test
+	// test if points are not null for three die
+	public void testScorePoints16()
+	{
+		Game game = new Game();
+		ArrayList <Die> die = new ArrayList<Die>();
+		Die die1 = new Die();
+		Die die2 = new Die();
+		Die die3 = new Die();
+		die1.setValue(1);
+		die2.setValue(2);
+		die3.setValue(3);
+		die.add(die1);
+		die.add(die2);
+		die.add(die3);
+		game.scorePoints(die);
+		int points = game.rollPoints;
+		assertNotNull(points);
+		
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
