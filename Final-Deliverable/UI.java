@@ -77,8 +77,9 @@ import java.io.Serializable;
 		{
 			System.out.println("There are two players in this game!");
 			System.out.println("Player 1:");
-			Game newGame = new Game();
-			newGame.Turn();
+			Game1 newGame = new Game1();
+			newGame.Game();
+			newGame.printDice();		
 			newGame.selectDie();
 			newGame.printFindDieList();
 		}
