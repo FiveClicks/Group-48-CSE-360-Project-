@@ -34,20 +34,29 @@ public class DieTest {
 	}
 	
 	@Test
-	public void testRollDie(){
+	public void testSetValue(){
 		Die test5 = new Die();
-
-		test5.rollDie();
 		
-		assertTrue(test5.getValue() < 7 && test5.getValue() > 0);
+		test5.setValue(3);
+		
+		assertEquals(3, test5.getValue());
+	}
+	
+	@Test
+	public void testRollDie(){
+		Die test6 = new Die();
+
+		test6.rollDie();
+		
+		assertTrue(test6.getValue() < 7 && test6.getValue() > 0);
 	}
 
 	@Test
 	public void testSetSelected(){
-		Die test6 = new Die();
+		Die test7 = new Die();
 
-		test6.setSelected(true);
+		test7.setSelected(true);
 		
-		assertTrue(test6.getSelected());
+		assertTrue(test7.getSelected());
 	}
 }
