@@ -22,7 +22,7 @@ public class Game
 	
 	
 	/** Turn Constructor */
-	public void Game() 
+	public Game() 
 	{
 		
 		// Initialize each dice.
@@ -84,7 +84,7 @@ public class Game
 		}
 	}
 	
-	public ArrayList<Die> findPointDice() 
+	public void findPointDice() 
 	{
 		
 		ArrayList<Die> pointDice = new ArrayList<Die>();
@@ -96,7 +96,7 @@ public class Game
 		}
 		
 		//SORT ARRAY?
-		return pointDice;
+		scorePoints(pointDice);
 	}
 	
 	// Determine the points earned for an array of rolled selected dice to be scored.
