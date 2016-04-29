@@ -1,3 +1,12 @@
+package finaldeliverable; // remove this when you put into your file, or change to your package name
+
+/*
+ * @Author: Ryan Ditsworth, Jeremy St. Ange
+ * @Version1: 4/14/16
+ * 
+ * Class Description:This is a JUnit class that tests Game.
+ */
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -34,29 +43,44 @@ public class DieTest {
 	}
 	
 	@Test
-	public void testSetValue(){
-		Die test5 = new Die();
-		
-		test5.setValue(3);
-		
-		assertEquals(3, test5.getValue());
-	}
-	
-	@Test
 	public void testRollDie(){
-		Die test6 = new Die();
+		Die test5 = new Die();
 
-		test6.rollDie();
+		test5.rollDie();
 		
-		assertTrue(test6.getValue() < 7 && test6.getValue() > 0);
+		assertTrue(test5.getValue() < 7 && test5.getValue() > 0);
 	}
 
 	@Test
 	public void testSetSelected(){
-		Die test7 = new Die();
+		Die test6 = new Die();
 
-		test7.setSelected(true);
+		test6.setSelected(true);
 		
-		assertTrue(test7.getSelected());
+		assertTrue(test6.getSelected());
+	}
+	
+	@Test
+	public void testSetScored()
+	{
+		Die test = new Die();
+		
+		test.setScored(true);
+		assertTrue(test.getScored());
+		
+		test.setScored(false);
+		assertFalse(test.getScored());
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
