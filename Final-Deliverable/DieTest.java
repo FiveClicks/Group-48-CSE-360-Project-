@@ -4,7 +4,7 @@ package finaldeliverable; // remove this when you put into your file, or change 
  * @Author: Ryan Ditsworth, Jeremy St. Ange
  * @Version1: 4/14/16
  * 
- * Class Description:This is a JUnit class that tests Game.
+ * Class Description:This is a JUnit class that tests Die.
  */
 
 import static org.junit.Assert.*;
