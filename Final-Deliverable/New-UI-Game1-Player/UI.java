@@ -135,10 +135,10 @@ public class UI  implements Serializable
 		int winsP2 = 0;
 		if(p1Win)
 		{
-			winsP1 = players.get(0).getWins() + 1;
+			winsP1++;
 		}
 		else if(p2Win){
-			winsP2 = players.get(1).getWins() + 1;
+			winsP2++;
 		}
 		Player newPlayer1 = new Player();
 		Player newPlayer2 = new Player();
