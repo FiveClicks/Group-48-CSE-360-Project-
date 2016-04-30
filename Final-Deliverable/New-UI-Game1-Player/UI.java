@@ -2,7 +2,6 @@
  * @Author: Kartik
 
  * @Version1: 4/14/16
- * 
  * Class Description: This class is the UI for Farkle. It displays the option menu when first entered. It then goes to the 
  * method that is asked for. The game will be implemented here.
  * This class uses the Player class and the dicegame class.

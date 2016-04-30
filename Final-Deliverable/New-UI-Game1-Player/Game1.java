@@ -214,12 +214,17 @@ public class Game1
 			if(playerTurn == true)
 			{
 				totalPointsP1 += turnPoints;
+				
 			}
 			else
 			{
 				totalPointsP2 += turnPoints;
 			}
-			if(totalPointsP1 >= 5000 || totalPointsP2 >= 5000)
+			
+			System.out.println("Player1 has " + totalPointsP1 + " total points");
+			System.out.println("Player2 has " + totalPointsP2 + " total points");
+			
+			if(totalPointsP1 >= 500 || totalPointsP2 >= 500)
 			{
 				endGame();
 			}
@@ -239,6 +244,10 @@ public class Game1
 			{
 				reroll();
 			}
+		}
+		else
+		{
+			nextAction();
 		}
 	}	
 	
@@ -266,16 +275,17 @@ public class Game1
 			playerTurn = true;
 		}
 		pointDice.clear();
+		turnPoints = 0;
 		Game();
 	}
 	
 	public void endGame()
 	{
-		if(totalPointsP1 >= 5000)
+		if(totalPointsP1 >= 500)
 		{
 			p1Win = true;
 		}
-		else if (totalPointsP2 >= 5000)
+		else if (totalPointsP2 >= 500)
 		{
 			p2Win = true;
 		}
