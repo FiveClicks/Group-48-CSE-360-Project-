@@ -85,6 +85,9 @@ public class UI  implements Serializable
 		System.out.println("Three dice rolled at the same time with the same value is worth 100 times");
 		System.out.println("the face value. Example: three 2's is 200 points.");
 		System.out.println("An exception to the three dice is that if three 1s are rolled, you score 1000 points.");
+		System.out.println("Program output:");
+		System.out.println("When dice are selected, and the dice are rerolled, the new dice along with the old, selected die are outputted");
+		System.out.println("The old die in the reroll are not added to the score.");
 		System.out.println("");
 	}
 

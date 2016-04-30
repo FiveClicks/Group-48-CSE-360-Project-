@@ -17,6 +17,7 @@ public class Game1
 	int turnPoints = 0;
 	int totalPointsP1 = 0;
 	int totalPointsP2 = 0;
+	int allDiceRolled = 0;
 	boolean p1Win = false;
 	boolean p2Win = false;
 	boolean playerTurn = true;
@@ -43,15 +44,15 @@ public class Game1
 	
 		
 		// Initial roll for each dice.
-		//d1.rollDie();
-		//d2.rollDie();
-		//d3.rollDie();
+		d1.rollDie();
+		d2.rollDie();
+		d3.rollDie();
 		
-		//testing purposes
+		/*testing purposes
 		d1.setValue(1);
 		d2.setValue(1);
 		d3.setValue(1);
-		
+		*/
 		dieList[0] = d1;
 		dieList[1] = d2;
 		dieList[2] = d3;
@@ -76,6 +77,7 @@ public class Game1
 				System.out.println("y for yes\tn for no");
 				if (userSelect.next().equals("y")) {
 					dieList[numDie-1].setSelected(true);
+					allDiceRolled++;
 				}
 			}	
 		}
@@ -217,7 +219,6 @@ public class Game1
 			{
 				totalPointsP2 += turnPoints;
 			}
-			totalPointsP1 = 5000;
 			if(totalPointsP1 >= 5000 || totalPointsP2 >= 5000)
 			{
 				endGame();
@@ -229,7 +230,7 @@ public class Game1
 		}
 		else if (userInput.equals("r"))
 		{
-			if(pointDice.size() == 3)
+			if(allDiceRolled == 3)
 			{
 				System.out.println("Sorry, You cannot roll any more dice.");
 				endturn();
@@ -249,8 +250,10 @@ public class Game1
 			if (!dieList[numDie].getScored()){
 				dieList[numDie].rollDie();
 				pointDice.add(dieList[numDie]);
+				allDiceRolled++;
 			}
 		}
+		printDice();
 		quickSort(pointDice);
 		scorePoints(pointDice);
 	}
