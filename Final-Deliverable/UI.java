@@ -69,6 +69,9 @@ import java.io.Serializable;
 			System.out.println("Three dice rolled at the same time with the same value is worth 100 times");
 			System.out.println("the face value. Example: three 2's is 200 points.");
 			System.out.println("An exception to the three dice is that if three 1s are rolled, you score 1000 points.");
+			System.out.println("Program output:");
+			System.out.println("When dice are selected, and the dice are rerolled, the new dice along with the old, selected die are outputted");
+			System.out.println("The old die in the reroll are not added to the score.");
 			System.out.println("");
 		}
 
@@ -76,24 +79,12 @@ import java.io.Serializable;
 		private void play() 
 		{
 			System.out.println("There are two players in this game!");
-			//System.out.println("Player 1:");
-			Game1 newGame = new Game1();
-			newGame.Game();		
-			boolean p1Win = newGame.getP1Win();
-			boolean p2Win = newGame.getP2Win();
-			int p1Points = newGame.getTotalPointsP1();
-			int p2Points = newGame.getTotalPointsP2();
-			if (p1Win == true)
-			{
-				System.out.printf("Congratulations Player 1! You won with %d Points", p1Points);
-				System.out.println("");
-			}
-			else if(p2Win == true)
-			{
-				System.out.printf("Congratulations Player 2! You won with %d Points", p2Points);
-				System.out.println("");
-			}
-			//newGame.printFindDieList();
+			System.out.println("Player 1:");
+			Game newGame = new Game();
+			newGame.Game();
+			newGame.printDice();		
+			newGame.selectDie();
+			newGame.printFindDieList();
 		}
 		
 
