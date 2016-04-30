@@ -1,6 +1,6 @@
+
 /*
  * @Author: Kartik
-
  * @Version1: 4/14/16
  * Class Description: This class is the UI for Farkle. It displays the option menu when first entered. It then goes to the 
  * method that is asked for. The game will be implemented here.
@@ -76,7 +76,7 @@ public class UI  implements Serializable
 		System.out.println("A \"farkle\" is when the dice are rolled but no point dice appear.");
 		System.out.println("At this point, the player loses all the points that he/she has collected.");
 		System.out.println("The turn ends and the next player plays.");
-		System.out.println("The game ends when a player hits 5000 points");
+		System.out.println("The game ends when a player hits 500 points");
 		System.out.println("");
 		System.out.println("How to acquire points:");
 		System.out.println("A roll of 1 is worth 100 points");
