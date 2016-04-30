@@ -1,7 +1,7 @@
+
 /**
  * 
  * @author Jeremy St. Ange
-
  * @version 1
  * 
  * A die object that allows for manipulation.
@@ -46,6 +46,11 @@ public class Die {
 		return selected;
 	}
 	
+	
+	/**
+	 * Setter for the selected attribute
+	 * @param trueOrFalse
+	 */
 	public void setSelected(boolean trueOrFalse) {
 		selected = trueOrFalse;
 	}
@@ -69,10 +74,20 @@ public class Die {
 		return randomInt;
 	}
 
+	
+	/**
+	 * Setter for the scored attribute
+	 * @param trueOrFalse
+	 */
 	public void setScored(boolean trueOrFalse) {
 		scored = trueOrFalse;
 	}
 	
+	
+	/**
+	 * Setter for the value attribute
+	 * @param incValue
+	 */
 	public void setValue(int incValue) {
 		value = incValue;
 	}
