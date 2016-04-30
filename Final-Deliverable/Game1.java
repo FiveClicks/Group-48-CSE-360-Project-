@@ -241,6 +241,11 @@ public class Game1
 				reroll();
 			}
 		}
+		else
+		{
+			System.out.println("Invalid input! Please try again.");
+			nextAction();
+		}
 	}	
 	
 	private void reroll() 
