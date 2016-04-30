@@ -1,6 +1,7 @@
 To run the game:
 
-Download every file in the folder "New-UI-Game1-Player" and run Driver.java.
+Download every file in the folder "New-UI-Game1-Player" and run Driver.java. Make sure the statistics.txt file is located
+in the project folder.
 
 
 Testing:
