@@ -1,0 +1,30 @@
+/* 
+ * This test shows player1 winning a game and it being reflected in the statistics menu option.
+ */
+
+You have Scored:100
+Press q: Quit and add your turn score to your game score
+Press r: Roll any dice that have not been used as point dice
+q
+Player1 has 500 total points
+Player2 has 0 total points
+Congratulations Player 1! You won with 500 Points
+Main Menu:  ----------------------------------------
+1) Play!
+2) Instructions
+3) See Statistics
+5) Exit Program.
+
+Enter menu choice:3
++-----------------------------------------------+
++----------------- Statistics ------------------+
++-----------------------------------------------+
+Player1, Wins: 1 
+Player2, Wins: 0 
+Main Menu:  ----------------------------------------
+1) Play!
+2) Instructions
+3) See Statistics
+5) Exit Program.
+
+Enter menu choice:

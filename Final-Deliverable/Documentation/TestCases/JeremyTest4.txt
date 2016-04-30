@@ -1,0 +1,28 @@
+/*
+ * This test shows that player2 wins a game and returns the user to the main
+ * menu. From there, the user can access the statistics and it is reflected that
+ * player2 has a win.
+ */
+
+Player1 has 300 total points
+Player2 has 550 total points
+Congratulations Player 2! You won with 550 Points
+Main Menu:  ----------------------------------------
+1) Play!
+2) Instructions
+3) See Statistics
+5) Exit Program.
+
+Enter menu choice:3
++-----------------------------------------------+
++----------------- Statistics ------------------+
++-----------------------------------------------+
+Player1, Wins: 0 
+Player2, Wins: 1 
+Main Menu:  ----------------------------------------
+1) Play!
+2) Instructions
+3) See Statistics
+5) Exit Program.
+
+Enter menu choice:

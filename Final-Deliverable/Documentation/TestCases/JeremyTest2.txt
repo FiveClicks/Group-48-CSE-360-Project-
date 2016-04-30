@@ -1,0 +1,22 @@
+/*
+ * This is a test that shows rolling a single 1 results in 100 points added to that players' turn points.
+ */
+
+
+Player 2:
+Here are the results of your roll:
+Die 1: 1
+Die 2: 4
+Die 3: 2
+Do you want to select Die: 1 to be scored?
+y for yes	n for no
+y
+Do you want to select Die: 2 to be scored?
+y for yes	n for no
+y
+Do you want to select Die: 3 to be scored?
+y for yes	n for no
+y
+You have Scored:100
+Press q: Quit and add your turn score to your game score
+Press r: Roll any dice that have not been used as point dice

@@ -1,0 +1,23 @@
+/*
+ * This test shows the game quits correctly once a player reaches 500 points.
+ */
+
+Die 1: 2
+Die 2: 5
+Die 3: 5
+Do you want to select Die: 1 to be scored?
+y for yes	n for no
+n
+Do you want to select Die: 2 to be scored?
+y for yes	n for no
+y
+Do you want to select Die: 3 to be scored?
+y for yes	n for no
+y
+You have Scored:100
+Press q: Quit and add your turn score to your game score
+Press r: Roll any dice that have not been used as point dice
+q
+Player1 has 500 total points
+Player2 has 300 total points
+Congratulations Player 1! You won with 500 Points

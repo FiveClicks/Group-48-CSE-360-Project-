@@ -1,0 +1,30 @@
+/*
+ * This test shows player 1 receving 100 for a roll of 1 on the first roll, then rerolling and getting a 5 on the next 
+ * roll and receiving 50 for that roll for a turn total of 150.
+ */
+
+Here are the results of your roll:
+Die 1: 2
+Die 2: 1
+Die 3: 4
+Do you want to select Die: 1 to be scored?
+y for yes	n for no
+n
+Do you want to select Die: 2 to be scored?
+y for yes	n for no
+y
+Do you want to select Die: 3 to be scored?
+y for yes	n for no
+ 
+n
+You have Scored:100
+Press q: Quit and add your turn score to your game score
+Press r: Roll any dice that have not been used as point dice
+r
+Here are the results of your roll:
+Die 1: 5
+Die 2: 1
+Die 3: 3
+You have Scored:50
+Press q: Quit and add your turn score to your game score
+Press r: Roll any dice that have not been used as point dice

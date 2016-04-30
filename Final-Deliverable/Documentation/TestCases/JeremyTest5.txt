@@ -1,0 +1,24 @@
+/* 
+ * This test shows a player rolling three 2's and receiving 200 points for the roll.
+ */
+
+Player 1:
+Here are the results of your roll:
+Die 1: 2
+Die 2: 2
+Die 3: 2
+Do you want to select Die: 1 to be scored?
+y for yes	n for no
+y
+Do you want to select Die: 2 to be scored?
+y for yes	n for no
+y
+Do you want to select Die: 3 to be scored?
+y for yes	n for no
+y
+You have Scored:200
+Press q: Quit and add your turn score to your game score
+Press r: Roll any dice that have not been used as point dice
+q
+Player1 has 400 total points
+Player2 has 0 total points
