@@ -76,12 +76,24 @@ import java.io.Serializable;
 		private void play() 
 		{
 			System.out.println("There are two players in this game!");
-			System.out.println("Player 1:");
+			//System.out.println("Player 1:");
 			Game1 newGame = new Game1();
-			newGame.Game();
-			newGame.printDice();		
-			newGame.selectDie();
-			newGame.printFindDieList();
+			newGame.Game();		
+			boolean p1Win = newGame.getP1Win();
+			boolean p2Win = newGame.getP2Win();
+			int p1Points = newGame.getTotalPointsP1();
+			int p2Points = newGame.getTotalPointsP2();
+			if (p1Win == true)
+			{
+				System.out.printf("Congratulations Player 1! You won with %d Points", p1Points);
+				System.out.println("");
+			}
+			else if(p2Win == true)
+			{
+				System.out.printf("Congratulations Player 2! You won with %d Points", p2Points);
+				System.out.println("");
+			}
+			//newGame.printFindDieList();
 		}
 		
 
