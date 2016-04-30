@@ -7,4 +7,4 @@ Testing:
 
 We have JUnit tests for some methods in Game1 and Die. In order to test the other components of the game, we couldn't
 use the unit tests and, rather, we ran the game and fored certain situations to test for the right reaction. The documentation
-of those tests are in the folder labeled "Testing"
+of those tests are in the folder labeled "TestCases"
