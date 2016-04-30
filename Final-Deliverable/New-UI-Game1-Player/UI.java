@@ -1,6 +1,6 @@
-
 /*
  * @Author: Kartik
+
  * @Version1: 4/14/16
  * Class Description: This class is the UI for Farkle. It displays the option menu when first entered. It then goes to the 
  * method that is asked for. The game will be implemented here.
@@ -69,7 +69,7 @@ public class UI  implements Serializable
 		System.out.println("");
 		System.out.println("------Instructions------");
 		System.out.println("The objective of the game is to score as many points.");
-		System.out.println("You are given 6 dice. On your first roll. You must roll all six dice. ");
+		System.out.println("You are given 3 dice. On your first roll. You must roll all six dice. ");
 		System.out.println("After a player rolls. He/She may set aside any point dice (dice that scored points).");
 		System.out.println("At this time the player has the option to continue rolling the remaining dice");
 		System.out.println("to collect more points, or stop and keep the points.");
@@ -83,7 +83,7 @@ public class UI  implements Serializable
 		System.out.println("A roll of 5 is worth 50 points");
 		System.out.println("Three dice rolled at the same time with the same value is worth 100 times");
 		System.out.println("the face value. Example: three 2's is 200 points.");
-		System.out.println("An exception to the three dice is that if three 1s are rolled, you score 1000 points.");
+		System.out.println("An exception to the three dice is that if three 1s are rolled, you score 300 points.");
 		System.out.println("Program output:");
 		System.out.println("When dice are selected, and the dice are rerolled, the new dice along with the old, selected die are outputted");
 		System.out.println("The old die in the reroll are not added to the score.");
@@ -131,8 +131,8 @@ public class UI  implements Serializable
 
 	public void createNewFile() throws IOException
 	{
-		int winsP1 = 0;
-		int winsP2 = 0;
+		int winsP1 = players.get(0).getWins();
+		int winsP2 = players.get(1).getWins();
 		if(p1Win)
 		{
 			winsP1++;
